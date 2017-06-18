@@ -54,7 +54,7 @@ The following is the result of combining two methods with equation:
 
 ### 3. Perspective Transformation (Bird Eye View)
 
-Then, I perform a perspective transform to get a birds eye view of the lane. This allows up to fit a polynomial to the land line which we couldn't do very easily before, and to find the curvature of the lines so that autonomous car can decide the best steering angles based on the information. To compute the perspective transform matrix, I need to provide the source and destination points to openCV `cv2.warpPerspective` API. The following is the src and dst coordinates I used for the transformation.
+Then, I perform a perspective transform to get a birds eye view of the lane. This allows us to fit a polynomial to the land line which we couldn't do very easily before, and to find the curvature of the lines so that autonomous car can predict the best steering angles. To compute the perspective transform matrix, we need to provide the source and destination points to openCV `cv2.warpPerspective` API. The following is the src and dst coordinates that is used for the transformation.
 
 | Source        | Destination   | 
 |:-------------:|:-------------:| 
